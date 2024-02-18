@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "../styles/Navbar.css"
+import { Link, BrowserRouter, Route } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -90,6 +91,7 @@ const Navbar = () => {
 
 
   return (
+    
     <header id="nav-menu" aria-label="navigation bar">
       <div className="container">
         <div className="nav-start">
@@ -182,7 +184,7 @@ const Navbar = () => {
               </li>
               <li>
                 <button className="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
-                  Homeworks
+                  Docs
                   <i className="bx bx-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div id="dropdown2" className="dropdown">
@@ -210,9 +212,9 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              <li><a className="nav-link" href="/">Jobs</a></li>
-              <li><a className="nav-link" href="/">Livestream</a></li>
-              <li><a className="nav-link" href="/">About</a></li>
+              <li><Link className='nav-link' to="/">Home</Link></li>
+              <li><Link className='nav-link' to="/Homeworks">Homeworks</Link></li>
+              <li><Link className='nav-link' to="/About">About</Link></li>
             </ul>
           </nav>
         </div>
@@ -226,7 +228,7 @@ const Navbar = () => {
             <a href="#profile">
               <img src="https://avatars.githubusercontent.com/u/134900313?v=4" width="30" height="30" alt="user image" />
             </a>
-            <button className="btn btn-primary">Loggin</button>
+            <button className="btn btn-primary"><Link to="/*">Loggin</Link></button>
           </div>
 
           <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">

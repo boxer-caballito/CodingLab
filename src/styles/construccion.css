@@ -1,0 +1,26 @@
+.construccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.foots {
+    position: relative;
+    top: 200px;
+}
+
+.VolverBTN {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.VolverBTN:hover {
+    transform: scale(1.1); 
+}

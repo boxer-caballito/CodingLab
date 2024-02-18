@@ -1,0 +1,44 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*logo de freecodecamp */
+
+.contenedorList {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.freecodecamp-logo {
+  width: 400px;
+  height: 50px;
+}
+
+/* estilo lista de tareas */
+
+.tarea-lista-principal {
+  width: 600px;
+  height: 500px;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
+  user-select: none;
+}
+
+.containerTaks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-text {
+  margin-bottom: 80px;
+}
