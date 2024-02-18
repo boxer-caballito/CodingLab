@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CodingLab/build/static/css/main.157a1132.css",
-    "main.js": "/CodingLab/build/static/js/main.235c40ca.js",
-    "index.html": "/CodingLab/build/index.html",
-    "main.157a1132.css.map": "/CodingLab/build/static/css/main.157a1132.css.map",
-    "main.235c40ca.js.map": "/CodingLab/build/static/js/main.235c40ca.js.map"
+    "main.css": "/CodingLab/static/css/main.157a1132.css",
+    "main.js": "/CodingLab/static/js/main.4379af4f.js",
+    "index.html": "/CodingLab/index.html",
+    "main.157a1132.css.map": "/CodingLab/static/css/main.157a1132.css.map",
+    "main.4379af4f.js.map": "/CodingLab/static/js/main.4379af4f.js.map"
   },
   "entrypoints": [
     "static/css/main.157a1132.css",
-    "static/js/main.235c40ca.js"
+    "static/js/main.4379af4f.js"
   ]
 }
