@@ -1,0 +1,10 @@
+.curse {
+    border: solid 1px #000;
+    padding: 50px;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.curse:hover {
+    transform: scale(1.1);
+}
