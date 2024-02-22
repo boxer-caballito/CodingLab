@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 import Tarea from "./Components/tarea"
 import Home from './Components/home';
 import Construccion from './Components/Construccion';
+import Info from './Components/Info';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,12 @@ const router = createBrowserRouter([
 {
 path: "/*",
 element: <Construccion/>
+}, 
+{
+path: "/about",
+element: <Info/>
 }
+
 
 ])
 

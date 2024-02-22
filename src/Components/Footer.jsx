@@ -12,7 +12,7 @@ var Footer = () => {
     }
 
     return(
-        <div className="containerFooter">
+        <footer className="containerFooter">
             <div className="dates">
                 <h3>CREATE BY EVAN</h3>
                 <p>FRONT-END AND BACKEND programmer 💻</p>
@@ -30,7 +30,7 @@ var Footer = () => {
                 <img src="https://www.svgrepo.com/show/428083/lab.svg" alt="log" width={50} />
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

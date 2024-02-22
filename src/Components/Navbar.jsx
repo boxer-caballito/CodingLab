@@ -85,6 +85,10 @@ const Navbar = () => {
         };
     }, []);
 
+    const Location = () => {
+      window.location.href="/home"
+    }
+
     var home = () => {
       window.location.href ="./homeworks.html"
     }
@@ -96,7 +100,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-start">
           <a className="logo" href="/">
-            <img src="https://www.svgrepo.com/show/428083/lab.svg" width="35" height="35" alt="Inc Logo" />
+            <img src="https://www.svgrepo.com/show/428083/lab.svg" width="35" height="35" alt="Inc Logo" onClick={Location}/>
           </a>
           <nav className="menu">
             <ul className="menu-bar">
@@ -111,8 +115,8 @@ const Navbar = () => {
                       <a className="dropdown-link" href="#best-of-the-day">
                         <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/botd.svg" className="icon" />
                         <div>
-                          <span className="dropdown-link-title">Best of the day</span>
-                          <p>Shorts featured today by curators</p>
+                          <span className="dropdown-link-title">Curses</span>
+                          <p>All your courses here</p>
                         </div>
                       </a>
                     </li>
@@ -130,7 +134,7 @@ const Navbar = () => {
                         <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sp.svg" className="icon" />
                         <div>
                           <span className="dropdown-link-title">Subscriptions</span>
-                          <p>Gain exclusive access</p>
+                          <p>your subscriptions</p>
                         </div>
                       </a>
                     </li>
@@ -147,7 +151,7 @@ const Navbar = () => {
 
                   <ul role="menu">
                     <li className="dropdown-title">
-                      <span className="dropdown-link-title">Browse by apps</span>
+                      <span className="dropdown-link-title">Comming</span>
                     </li>
                     <li role="menuitem">
                       <a className="dropdown-link" href="#adobe-xd">
@@ -193,10 +197,10 @@ const Navbar = () => {
                       <span className="dropdown-link-title">Browse Categories</span>
                     </li>
                     <li role="menuitem">
-                      <a className="dropdown-link" href="homeworks.html">Branding</a>
+                      <a className="dropdown-link" href="homeworks.html">Documentation</a>
                     </li>
                     <li role="menuitem">
-                      <a className="dropdown-link" href="#illustrations">Illustration</a>
+                      <a className="dropdown-link" href="#illustrations">curses</a>
                     </li>
                   </ul>
                   <ul role="menu">

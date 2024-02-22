@@ -3,7 +3,6 @@ import "../styles/Header.css"
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-//componentes de styled components
 
 const ButtonBlue = styled.button`
     background-color: #2b72fb;
@@ -23,7 +22,7 @@ const ButtonBlue = styled.button`
 var Cabezera = () =>  {
 
     return(
-        <div className="containerMain"> 
+        <section className="containerMain"> 
             <h1>CodingLab</h1>
             <p>Aprende programacion totalmente gratis</p>
             <img src="https://www.svgrepo.com/show/428083/lab.svg"  alt="CodingLab.png" className="Lab"/>
@@ -31,7 +30,7 @@ var Cabezera = () =>  {
             <ButtonBlue><Link to="/*">Doc</Link></ButtonBlue>
             <ButtonBlue><Link to="/*">Curses</Link></ButtonBlue>
             </div>
-        </div>
+        </section>
     );
 }
 
