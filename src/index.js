@@ -12,6 +12,7 @@ import Tarea from "./Components/tarea"
 import Home from './Components/home';
 import Construccion from './Components/Construccion';
 import Info from './Components/Info';
+import Calculator from './Components/calculator';
 
 const router = createBrowserRouter([
   {
@@ -29,8 +30,11 @@ element: <Construccion/>
 {
 path: "/about",
 element: <Info/>
+}, 
+{
+  path: "/Calculator",
+  element: <Calculator/>
 }
-
 
 ])
 

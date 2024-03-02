@@ -1,0 +1,47 @@
+.texto {
+    text-align: right;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+#pantallaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: rgb(72, 72, 72);
+    width: 500px;
+    padding: 35px;
+    color: white;
+    border-radius: 20px;
+}
+
+.titleCalculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    transition: all 0.7s;
+    color: black;
+}
+
+.titleCalculator:hover {
+    transform: scale(1.1);
+    color: rgb(122, 122, 255);
+}
+
+.borrar {
+    width: 30px;
+    position: absolute;
+    left: 550px;
+    transition: all 0.3s;
+}
+
+svg:hover {
+    transform: scale(1.2);
+} 
