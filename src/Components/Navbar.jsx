@@ -219,6 +219,7 @@ const Navbar = () => {
               <li><Link className='nav-link' to="/">Home</Link></li>
               <li><Link className='nav-link' to="/Homeworks">Homeworks</Link></li>
               <li><Link className='nav-link' to="/About">About</Link></li>
+              <li><Link className='nav-link' to="/Calculator">Calculator</Link></li>
             </ul>
           </nav>
         </div>

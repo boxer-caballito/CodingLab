@@ -1,5 +1,8 @@
 .texto {
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main {
@@ -10,12 +13,17 @@
     margin: 100px 0 0 0;
 }
 
+.fx {
+    position: relative;
+    bottom: 10px;
+}
+
 #pantallaContainer {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     background-color: rgb(72, 72, 72);
-    width: 500px;
+    width: 600px;
     padding: 35px;
     color: white;
     border-radius: 20px;
@@ -38,7 +46,6 @@
 .borrar {
     width: 30px;
     position: absolute;
-    left: 550px;
     transition: all 0.3s;
 }
 
