@@ -1,0 +1,123 @@
+/* Estilos opcionales para el menú desplegable */
+#menu {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+#adivinanza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreListaMagica {
+text-align: center;
+}
+
+.butc {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px 20px 0 20px;
+    cursor: pointer;
+    background-color: #007bff; /* Azul pastel */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.butc:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+.textInput[type="text"] {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #007bff; /* Azul pastel */
+    padding: 8px 12px;
+    border: 1px solid #007bff; /* Azul pastel */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.section-title {
+    color: #007bff; /* Azul pastel */
+    font-weight: bold;
+    font-size: 24px;
+}
+.parrafis {
+    color: #007bff; /* Azul pastel */
+    font-size: 18px;
+}
+
+.sectionAdivinanza {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ola {
+    width: 600px;
+    transition: all 0.7s;
+}
+
+.Ola:hover {
+    transform: scale(1.0);
+}
+
+.Olatitle {
+    text-align: center;
+}
+
+.BoxOLa {
+    background-color: #9fd1e7;
+    border-radius: 20px;
+}
+
+.ContainerMedia {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 40px;
+    border-radius: 20px;
+    transition: all 0.7s;
+}
+
+.cajasMedia {
+    background-color: #0056b3;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+@media(width <= 944px) {
+    .ContainerMedia {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aquamarine;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    .cajasMedia {
+        background-color: #0056b3;
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+        transition: all 0.7s;
+        margin: 30px;
+    }
+}

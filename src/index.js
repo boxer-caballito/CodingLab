@@ -13,6 +13,7 @@ import Home from './Components/home';
 import Construccion from './Components/Construccion';
 import Info from './Components/Info';
 import Calculator from './Components/calculator';
+import ZonaJuego from './Components/ZonaJuegos';
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,11 @@ element: <Info/>
 {
   path: "/Calculator",
   element: <Calculator/>
+},
+{
+  path: "/GameZone",
+  element: <ZonaJuego/>
 }
-
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

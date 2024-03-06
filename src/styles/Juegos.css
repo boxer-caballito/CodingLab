@@ -1,0 +1,35 @@
+.JuegosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 90px 0;
+}
+
+.ContainerMainGame {
+margin: 20px;
+}
+
+.ChildToJuegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 80px;
+    border-radius: 20px;
+    transition: all 0.7s;
+}
+
+.LineaGames {
+    width: 100%;
+    margin: 10px;
+}
+
+.imageRow {
+    margin: 20px;
+}
+
+.parrafoGame {
+    margin: 5px;
+}

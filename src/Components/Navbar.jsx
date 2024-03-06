@@ -121,13 +121,13 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li role="menuitem">
-                      <a className="dropdown-link" href="#featured-streams">
+                      <Link className="dropdown-link" to="/GameZone">
                         <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/fs.svg" className="icon" />
                         <div>
-                          <span className="dropdown-link-title">Featured Streams</span>
-                          <p>Leading creatives livestreams</p>
+                          <span className="dropdown-link-title">GameZone</span>
+                          <p>Creaciones del salon</p>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li role="menuitem">
                       <a className="dropdown-link" href="#subscriptions">
