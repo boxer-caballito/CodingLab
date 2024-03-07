@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Juegos from "./Juegos";
 import "../styles/ZonaJuego.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ZonaJuego () {
 
@@ -45,6 +45,31 @@ function ZonaJuego () {
             alert('Incorrecto. Sigue intentándolo.');
         }
     };
+
+
+    const [showForm, setShowForm] = useState(false);
+    const [resultText, setResultText] = useState('');
+
+    const handleExpandButtonClick = () => {
+        setShowForm(true);
+    };
+
+    const handleWhiteBoxClick = (e) => {
+        e.stopPropagation();
+    };
+
+    const handleResultsButtonClick = () => {
+        const answers = document.querySelectorAll('input[type="radio"]:checked');
+        let correctAnswers = 0;
+        answers.forEach((answer) => {
+            if (answer.value === 'c') {
+                correctAnswers++;
+            }
+        });
+        const resultText = `Has obtenido ${correctAnswers} respuestas correctas de ${answers.length}`;
+        setResultText(resultText);
+    };
+    
 
     return(
         <div>
@@ -117,6 +142,123 @@ function ZonaJuego () {
                     <h5>Texto 2</h5>
                         </div>
                 </div>
+            </Juegos>
+
+            <Juegos 
+            title={"Formulario desplazable"}
+            Creator={"Autor: GABRIEL ALCANTAR CORNEJO"}
+            >
+
+               <div className="button-container">
+            {!showForm ? (
+                <button id="expand-button" className="expand-button" onClick={handleExpandButtonClick}>
+                    <span className="title">Zona de práctica</span>
+                </button>
+            ) : (
+                <button id="expand-button" className="expand-button expanded">
+                    <span className="title">Zona de práctica</span>
+                    <div id="white-box" className="white-box" onClick={handleWhiteBoxClick}>
+                        <div className="topics">
+                            <div className="topic">
+                                <h3>Uso de la V y la B:</h3>
+                                <div className="questions">
+                                    <div className="question">
+                                        <p>¿Cuál es la palabra correcta?</p>
+                                        <input type="radio" name="q1" value="c" /> a) Bebida<br />
+                                        <input type="radio" name="q1" value="a" /> b) Bevida<br />
+                                        <input type="radio" name="q1" value="b" /> c) Vebida<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="topic">
+                                <h3>Reglas de la J y la G:</h3>
+                                <div className="questions">
+                                    <div className="question">
+                                        <p>¿Cuál es la palabra correcta?</p>
+                                        <input type="radio" name="q6" value="c" /> a) Jirafa<br />
+                                        <input type="radio" name="q6" value="b" /> b) Girafa<br />
+                                        <input type="radio" name="q6" value="a" /> c) Hirafa<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="topic">
+                                <h3>El uso de la S:</h3>
+                                <div className="questions">
+                                    <div className="question">
+                                        <p>¿Cuál es la palabra correcta?</p>
+                                        <input type="radio" name="q11" value="c" /> a) Sospecha<br />
+                                        <input type="radio" name="q11" value="b" /> b) Sospexa<br />
+                                        <input type="radio" name="q11" value="a" /> c) Sospeja<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="topic">
+                                <h3>Uso de la doble R:</h3>
+                                <div className="questions">
+                                    <div className="question">
+                                        <p>¿Cuál es la palabra correcta?</p>
+                                        <input type="radio" name="q16" value="c" /> a) Carreta<br />
+                                        <input type="radio" name="q16" value="b" /> b) Carrrota<br />
+                                        <input type="radio" name="q16" value="a" /> c) Zanahorria<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="topic">
+                                <h3>Reglas de la acentuación:</h3>
+                                <div className="questions">
+                                    <div className="question">
+                                        <p>¿Cuál es la palabra correctamente acentuada?</p>
+                                        <input type="radio" name="q21" value="c" /> a) Telefonó<br />
+                                        <input type="radio" name="q21" value="b" /> b) Teléfono<br />
+                                        <input type="radio" name="q21" value="a" /> c) Telefono<br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="results-button" onClick={handleResultsButtonClick}>Ver resultados</button>
+                        <div id="result-box">{resultText}</div>
+                    </div>
+                </button>
+            )}
+        </div>
+
+            </Juegos>
+
+            <Juegos
+            title={"Efecto hover"}
+            Creator={"ALAN MOISES ROMERO GONZALEZ"}
+            >
+                <img src="https://us.123rf.com/450wm/loft39studio/loft39studio2308/loft39studio230806046/209958512-ai-generativo-lindo-gatito-blanco-en-el-parque-en-la-naturaleza-se-encuentra-sobre-piedra-al-aire.jpg?ver=6" alt="ImagenGatitos.png" className="GatosClass"/>
+            </Juegos>
+
+            <Juegos
+            title = {"Texto animado"}
+            Creator = {"Autor: DANIELA ABIGAIL SALDAÑA MORENO"}
+            >
+                    <div class="contenidoDaniela">
+        <h1 class="leftDaniela">TEXTO</h1>
+                </div>
+            </Juegos>
+
+            <Juegos
+            title={"Linea del tiempo"}
+            Creator={"Autor: KARLA JANET CIBRIAN ANDRADE"}>
+                  <section id="inicio">
+
+    <div class="contenedor-tiempo">
+        <div class="linea"></div>
+            <a id="iEtiquetaid" class="Nombre">Nombre de la seccion</a>
+</div>  
+<br/>
+<br/>
+<br/>
+<h1>Nombre del inicio de la pagina</h1>
+<h2>subtitulo</h2>
+<br/>
+<section id="eEtiquetaid">
+<h2>Nombre de la seccion</h2>     
+</section>
+</section> 
             </Juegos>
             <Footer/>
         </div>
