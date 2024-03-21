@@ -221,6 +221,7 @@ const Navbar = () => {
               <li><Link className='nav-link' to="/About">About</Link></li>
               <li><Link className='nav-link' to="/Calculator">Calculator</Link></li>
               <li><Link className='nav-link' to="/GameZone">GameZone</Link></li>
+              <li><a href="https://9000-monospace-ai-1710623307682.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/?monospaceUid=269012">IA CodingLab</a></li>
             </ul>
           </nav>
         </div>

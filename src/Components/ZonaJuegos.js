@@ -142,6 +142,16 @@ function ZonaJuego () {
                     <h5>Texto 2</h5>
                         </div>
                 </div>
+
+                <nav className="NavKarina">
+    <ul class="menuKarina">
+      <li class="menu-itemKarina"><a href="#" class="menu-linkKarina">Inicio</a></li>
+      <li class="menu-itemKarina"><a href="#" class="menu-linkKarina">Acerca de</a></li>
+      <li class="menu-itemKarina"><a href="#" class="menu-linkKarina">Servicios</a></li>
+      <li class="menu-itemKarina"><a href="#" class="menu-linkKarina">Contacto</a></li>
+    </ul>
+  </nav>
+
             </Juegos>
 
             <Juegos 
@@ -229,6 +239,7 @@ function ZonaJuego () {
             Creator={"ALAN MOISES ROMERO GONZALEZ"}
             >
                 <img src="https://us.123rf.com/450wm/loft39studio/loft39studio2308/loft39studio230806046/209958512-ai-generativo-lindo-gatito-blanco-en-el-parque-en-la-naturaleza-se-encuentra-sobre-piedra-al-aire.jpg?ver=6" alt="ImagenGatitos.png" className="GatosClass"/>
+                <h5 className="H5alan">Imagen de gatitos</h5>
             </Juegos>
 
             <Juegos
@@ -247,18 +258,53 @@ function ZonaJuego () {
 
     <div class="contenedor-tiempo">
         <div class="linea"></div>
-            <a id="iEtiquetaid" class="Nombre">Nombre de la seccion</a>
 </div>  
 <br/>
 <br/>
 <br/>
-<h1>Nombre del inicio de la pagina</h1>
-<h2>subtitulo</h2>
+<h1>Linea del tiempo</h1>
 <br/>
 <section id="eEtiquetaid">
-<h2>Nombre de la seccion</h2>     
+    <div className="AllCubes">
+    <div className="cube1">
+        HTML
+    </div>  
+
+    <div className="cube2">
+        CSS
+    </div> 
+
+    <div className="cube3">
+        JAVASCRIPT
+    </div>
+    </div>
+
+    
 </section>
+<img src="https://www.svgrepo.com/show/533610/arrow-right.svg" width={40} className="arrow1"/>
+<img src="https://www.svgrepo.com/show/533610/arrow-right.svg" width={40} className="arrow2"/>
 </section> 
+            </Juegos>
+            <Juegos
+            title={"Imagenes iluminables"}
+            Creator={"TIRZO ANTONIO DIAZ INFANTE GOMEZ"}
+            >
+            <img src="https://plus.unsplash.com/premium_photo-1668208366618-cb82e9c7d8d0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwNGt8ZW58MHx8MHx8fDA%3D" width={350} className="ImagenTirzo"/>
+
+            </Juegos>
+
+            <Juegos
+            title={"viñetas y diseño responsivo"}
+            Creator={"CITLALLY RENATA SERRANO MENDOZA"}
+            >
+            <h1 className="Citlaly">Hola soy una lista ordenada <br/> con viñetas</h1>
+
+            <ol className="Lolo">
+                <li className="Viñetas">Html</li>
+                <li className="Viñetas">css</li>
+                <li className="Viñetas">JAVASCRIPT</li>
+            </ol>
+
             </Juegos>
             <Footer/>
         </div>
